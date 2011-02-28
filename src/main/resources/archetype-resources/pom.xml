@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>${groupId}</groupId>
-	<artifactId>${artifactId}</artifactId>
+	<artifactId>${artifactId}-parent</artifactId>
 	<version>${version}</version>
 	<packaging>pom</packaging>
 	<name>${module-name}</name>
@@ -71,7 +71,7 @@
 	</dependencyManagement>
 
 	<properties>
-		<openMRSVersion>1.8.0-SNAPSHOT</openMRSVersion>
+		<openMRSVersion>1.8.0-alpha</openMRSVersion>
 	</properties>
 
 	<build>
@@ -86,9 +86,9 @@
 					</configuration>
 				</plugin>
 				<plugin>
-					<groupId>org.motech.openmrs.plugin</groupId>
+					<groupId>org.openmrs.maven.plugins</groupId>
 					<artifactId>maven-openmrs-plugin</artifactId>
-					<version>1.0-RC4</version>
+					<version>1.0.1</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
