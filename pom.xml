@@ -8,7 +8,13 @@
   <packaging>maven-archetype</packaging>
 
   <name>openmrs-archetype-module</name>
-
+  
+  <scm>
+    <connection>scm:git:https://github.com/openmrs/openmrs-contrib-maven-archetype-basicmodule/</connection>
+    <developerConnection>scm:git:https://github.com/openmrs/openmrs-contrib-maven-archetype-basicmodule/</developerConnection>
+    <url>https://github.com/openmrs/openmrs-contrib-maven-archetype-basicmodule/</url>
+  </scm>
+  
   <build>
     <extensions>
       <extension>
