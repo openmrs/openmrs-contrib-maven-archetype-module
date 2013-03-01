@@ -1,4 +1,4 @@
-Maven Archetype for generating a basic OpenMRS module
+Maven archetype for generating a basic OpenMRS module
 =====================================================
 
 Please see the full documentation on 
