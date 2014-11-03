@@ -21,13 +21,13 @@ import org.springframework.transaction.annotation.Transactional;
  * <p>
  * It can be accessed only via Context:<br>
  * <code>
- * Context.getService(${service-dao-name-no-spaces}Service.class).someMethod();
+ * Context.getService(${module-name-no-spaces}Service.class).someMethod();
  * </code>
  * 
  * @see org.openmrs.api.context.Context
  */
 @Transactional
-public interface ${service-dao-name-no-spaces}Service extends OpenmrsService {
+public interface ${module-name-no-spaces}Service extends OpenmrsService {
      
 	/*
 	 * Add service methods here

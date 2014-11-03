@@ -9,8 +9,8 @@
 <hibernate-mapping package="${package}">
 
 <!--
-	<class name="${object-name-no-spaces}"
-		table="${symbol_dollar}{project.parent.artifactId}_${object-name-no-spaces}">
+	<class name="${module-name-no-spaces}"
+		table="${symbol_dollar}{project.parent.artifactId}_${module-name-no-spaces}">
 		<id name="id" type="int" column="id" unsaved-value="0">
 			<generator class="native" />
 		</id>

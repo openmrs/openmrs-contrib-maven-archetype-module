@@ -14,29 +14,20 @@
  *
  * Copyright (C) OpenMRS, LLC.  All Rights Reserved.
  */
-package ${package};
+package ${package}.api;
 
-import java.io.Serializable;
-import org.openmrs.BaseOpenmrsObject;
-import org.openmrs.BaseOpenmrsMetadata;
+import static org.junit.Assert.*;
+import org.junit.Test;
+import org.openmrs.api.context.Context;
+import org.openmrs.test.BaseModuleContextSensitiveTest;
 
 /**
- * It is a model class. It should extend either {@link BaseOpenmrsObject} or {@link BaseOpenmrsMetadata}.
+ * Tests {@link ${symbol_dollar}{${module-name-no-spaces}Service}}.
  */
-public class ${object-name-no-spaces} extends BaseOpenmrsObject implements Serializable {
-
-	private static final long serialVersionUID = 1L;
+public class  ${module-name-no-spaces}ServiceTest extends BaseModuleContextSensitiveTest {
 	
-	private Integer id;
-	
-	@Override
-	public Integer getId() {
-		return id;
+	@Test
+	public void shouldSetupContext() {
+		assertNotNull(Context.getService(${module-name-no-spaces}Service.class));
 	}
-	
-	@Override
-	public void setId(Integer id) {
-		this.id = id;
-	}
-	
 }

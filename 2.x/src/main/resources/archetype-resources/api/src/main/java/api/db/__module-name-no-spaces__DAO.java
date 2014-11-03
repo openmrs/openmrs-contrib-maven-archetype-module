@@ -13,12 +13,12 @@
  */
 package ${package}.api.db;
 
-import ${package}.api.${service-dao-name-no-spaces}Service;
+import ${package}.api.${module-name-no-spaces}Service;
 
 /**
- *  Database methods for {@link ${service-dao-name-no-spaces}Service}.
+ *  Database methods for {@link ${module-name-no-spaces}Service}.
  */
-public interface ${service-dao-name-no-spaces}DAO {
+public interface ${module-name-no-spaces}DAO {
 	
 	/*
 	 * Add DAO methods here

@@ -10,7 +10,7 @@
 	<name>${symbol_dollar}{project.parent.name}</name>
 	<version>${symbol_dollar}{project.parent.version}</version>
 	<package>${symbol_dollar}{project.parent.groupId}.${symbol_dollar}{project.parent.artifactId}</package>
-	<author>OpenMRS Developers</author>
+	<author>${module-author}</author>
 	<description>
 		${symbol_dollar}{project.parent.description}
 	</description>

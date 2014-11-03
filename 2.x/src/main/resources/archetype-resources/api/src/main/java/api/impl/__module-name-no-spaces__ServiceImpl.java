@@ -11,32 +11,34 @@
  *
  * Copyright (C) OpenMRS, LLC.  All Rights Reserved.
  */
-package ${package}.api.db.hibernate;
+package ${package}.api.impl;
 
+import org.openmrs.api.impl.BaseOpenmrsService;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.hibernate.SessionFactory;
-import ${package}.api.db.${service-dao-name-no-spaces}DAO;
+import ${package}.api.${module-name-no-spaces}Service;
+import ${package}.api.db.${module-name-no-spaces}DAO;
 
 /**
- * It is a default implementation of  {@link ${service-dao-name-no-spaces}DAO}.
+ * It is a default implementation of {@link ${module-name-no-spaces}Service}.
  */
-public class Hibernate${service-dao-name-no-spaces}DAO implements ${service-dao-name-no-spaces}DAO {
+public class ${module-name-no-spaces}ServiceImpl extends BaseOpenmrsService implements ${module-name-no-spaces}Service {
+	
 	protected final Log log = LogFactory.getLog(this.getClass());
 	
-	private SessionFactory sessionFactory;
+	private ${module-name-no-spaces}DAO dao;
 	
 	/**
-     * @param sessionFactory the sessionFactory to set
+     * @param dao the dao to set
      */
-    public void setSessionFactory(SessionFactory sessionFactory) {
-	    this.sessionFactory = sessionFactory;
+    public void setDao(${module-name-no-spaces}DAO dao) {
+	    this.dao = dao;
     }
     
-	/**
-     * @return the sessionFactory
+    /**
+     * @return the dao
      */
-    public SessionFactory getSessionFactory() {
-	    return sessionFactory;
+    public ${module-name-no-spaces}DAO getDao() {
+	    return dao;
     }
 }
