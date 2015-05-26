@@ -1,6 +1,3 @@
-#set( $symbol_pound = '#' )
-#set( $symbol_dollar = '$' )
-#set( $symbol_escape = '\' )
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
@@ -9,8 +6,8 @@
 <hibernate-mapping package="${package}">
 
 <!--
-	<class name="${module-name-no-spaces}"
-		table="${symbol_dollar}{project.parent.artifactId}_${module-name-no-spaces}">
+	<class name="${D-moduleClassPrefix}"
+		table="${D-moduleClassPrefix.toLowerCase()}">
 		<id name="id" type="int" column="id" unsaved-value="0">
 			<generator class="native" />
 		</id>

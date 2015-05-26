@@ -6,12 +6,12 @@
 	<artifactId>${artifactId}</artifactId>
 	<version>${version}</version>
 	<packaging>pom</packaging>
-	<name>${module-name}</name>
-	<description>${module-description}</description>
+	<name>${A-moduleName}</name>
+	<description>${B-moduleDescription}</description>
 	
 	<developers>
 		<developer>
-			<name>OpenMRS Developers</name>
+			<name>${C-moduleAuthor}</name>
 		</developer>
 	</developers>
 	
@@ -21,9 +21,9 @@
 	</organization>
 
 	<scm>
-		<connection>scm:svn:https://svn.openmrs.org/openmrs-modules/${artifactId}/trunk/</connection>
-		<developerConnection>scm:svn:https://svn.openmrs.org/openmrs-modules/${artifactId}/trunk/</developerConnection>
-		<url>https://svn.openmrs.org/openmrs-modules/${artifactId}/trunk/</url>
+		<connection>scm:git:git@github.com:openmrs/openmrs-module-${artifactId}.git</connection>
+		<developerConnection>scm:git:git@github.com:openmrs/openmrs-module-${artifactId}.git</developerConnection>
+		<url>https://github.com/openmrs/openmrs-module-${artifactId}</url>
 	</scm>
 	
 	<properties>
@@ -31,8 +31,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<uiframeworkVersion>3.2</uiframeworkVersion>
 		<appframeworkVersion>2.1</appframeworkVersion>
-		<uicommonsVersion>1.3-SNAPSHOT</uicommonsVersion>
-		<emrapiVersion>1.3-SNAPSHOT</emrapiVersion>
+		<uicommonsVersion>1.3</uicommonsVersion>
+		<emrapiVersion>1.3</emrapiVersion>
 		<appuiVersion>1.0</appuiVersion>
 	</properties>
 
@@ -130,8 +130,6 @@
 				<version>3.2.10</version>
 				<type>gem</type>
 			</dependency>
-
-
 		</dependencies>
 	</dependencyManagement>
 

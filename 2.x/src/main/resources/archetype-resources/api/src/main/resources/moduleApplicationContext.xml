@@ -27,16 +27,16 @@
 	<bean parent="serviceContext">
 		<property name="moduleService">
 			<list>
-				<value>${symbol_dollar}{project.parent.groupId}.${symbol_dollar}{project.parent.artifactId}.api.${module-name-no-spaces}Service</value>
+				<value>${symbol_dollar}{project.parent.groupId}.${symbol_dollar}{project.parent.artifactId}.api.${D-moduleClassPrefix}Service</value>
 				<bean
 					class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
 					<property name="transactionManager">
 						<ref bean="transactionManager" />
 					</property>
 					<property name="target">
-						<bean class="${symbol_dollar}{project.parent.groupId}.${symbol_dollar}{project.parent.artifactId}.api.impl.${module-name-no-spaces}ServiceImpl">
+						<bean class="${symbol_dollar}{project.parent.groupId}.${symbol_dollar}{project.parent.artifactId}.api.impl.${D-moduleClassPrefix}ServiceImpl">
 							<property name="dao">
-								<bean class="${symbol_dollar}{project.parent.groupId}.${symbol_dollar}{project.parent.artifactId}.api.db.hibernate.Hibernate${module-name-no-spaces}DAO">
+								<bean class="${symbol_dollar}{project.parent.groupId}.${symbol_dollar}{project.parent.artifactId}.api.db.hibernate.Hibernate${D-moduleClassPrefix}DAO">
 									<property name="sessionFactory">
 										<ref bean="sessionFactory" />
 									</property>

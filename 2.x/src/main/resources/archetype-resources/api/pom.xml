@@ -8,10 +8,10 @@
 		<version>${version}</version>
 	</parent>
 
-	<artifactId>${artifactId}</artifactId>
+	<artifactId>${artifactId}-api</artifactId>
 	<packaging>jar</packaging>
-	<name>${module-name} API</name>
-	<description>API project for ${module-name}</description>
+	<name>${A-moduleName} API</name>
+	<description>API project for ${A-moduleName}</description>
 
 	<dependencies>
 	

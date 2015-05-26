@@ -3,30 +3,22 @@
     xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <requiredProperties>
-        <requiredProperty key="module-name">
-            <defaultValue>Basic Module</defaultValue>
-        </requiredProperty>
-        <requiredProperty key="groupId">
+		<requiredProperty key="groupId">
             <defaultValue>org.openmrs.module</defaultValue>
         </requiredProperty>
-        <requiredProperty key="version">
+		<requiredProperty key="artifactId" />
+		<requiredProperty key="version">
             <defaultValue>1.0-SNAPSHOT</defaultValue>
         </requiredProperty>
-        <requiredProperty key="package">
-            <defaultValue>org.openmrs.module.basicmodule</defaultValue>
-        </requiredProperty>
-        <requiredProperty key="module-name-no-spaces">
-            <defaultValue>BasicModule</defaultValue>
-        </requiredProperty>
-        <requiredProperty key="module-description">
-            <defaultValue>Basic Module. Useful for creating other modules.</defaultValue>
-        </requiredProperty>
-        <requiredProperty key="module-author">
-            <defaultValue>OpenMRS Developers</defaultValue>
-        </requiredProperty>
-        <requiredProperty key="artifactId">
-            <defaultValue>basicmodule</defaultValue>
-        </requiredProperty>
+		<requiredProperty key="package">
+			<defaultValue>${groupId}.${artifactId}</defaultValue>
+		</requiredProperty>
+        <requiredProperty key="A-moduleName" />
+        <requiredProperty key="B-moduleDescription"/>
+        <requiredProperty key="C-moduleAuthor" />
+		<requiredProperty key="D-moduleClassPrefix">
+			<defaultValue>${A-moduleName.substring(0,1).toUpperCase()}${A-moduleName.substring(1).replaceAll(" ", "")}</defaultValue>
+		</requiredProperty>
     </requiredProperties>
   <fileSets>
     <fileSet filtered="true" encoding="UTF-8">

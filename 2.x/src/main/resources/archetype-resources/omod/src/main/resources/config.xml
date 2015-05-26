@@ -26,7 +26,7 @@
 
 	
 	<!-- Module Activator -->
-	<activator>${symbol_dollar}{project.parent.groupId}.${symbol_dollar}{project.parent.artifactId}.${module-name-no-spaces}Activator</activator>
+	<activator>${symbol_dollar}{project.parent.groupId}.${symbol_dollar}{project.parent.artifactId}.${D-moduleClassPrefix}Activator</activator>
 	
 	
 	<!-- Adds link to admin page -->
@@ -38,7 +38,7 @@
 	<!-- Maps hibernate file's, if present -->
 	<mappingFiles>
 
-        ${module-name-no-spaces}.hbm.xml
+        ${D-moduleClassPrefix}.hbm.xml
 				
 	</mappingFiles>
 
