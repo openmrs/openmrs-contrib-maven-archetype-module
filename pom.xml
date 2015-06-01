@@ -70,7 +70,7 @@
 		<repository>
 			<id>openmrs-repo-releases</id>
 			<name>Releases</name>
-			<url>http://mavenrepo.openmrs.org/nexus/content/repositories/releases/</url>
+			<url>http://mavenrepo.openmrs.org/nexus/content/repositories/releases</url>
 		</repository>
 		<snapshotRepository>
 			<id>openmrs-repo-snapshots</id>
