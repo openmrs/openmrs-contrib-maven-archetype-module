@@ -8,7 +8,7 @@
 		<version>${version}</version>
 	</parent>
 
-	<artifactId>${artifactId}-api</artifactId>
+	<artifactId>${rootArtifactId}-api</artifactId>
 	<packaging>jar</packaging>
 	<name>${A-moduleName} API</name>
 	<description>API project for ${A-moduleName}</description>

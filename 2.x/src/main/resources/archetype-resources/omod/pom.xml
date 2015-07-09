@@ -8,7 +8,7 @@
         <version>${version}</version>
     </parent>
 
-    <artifactId>${artifactId}</artifactId>
+    <artifactId>${rootArtifactId}-omod</artifactId>
     <packaging>jar</packaging>
     <name>${A-moduleName} OMOD</name>
     <description>OMOD project for ${A-moduleName}</description>
