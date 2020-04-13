@@ -188,7 +188,7 @@
 				<artifactId>maven-dependency-plugin</artifactId>
 				<executions>
 					<execution>
-						<id>Expand moduleApplicationContext and messages</id>
+						<id>Expand resources</id>
 						<goals>
 							<goal>unpack-dependencies</goal>
 						</goals>
@@ -196,8 +196,8 @@
 						<configuration>
 							<includeGroupIds>${project.parent.groupId}</includeGroupIds>
 							<includeArtifactIds>${project.parent.artifactId}-api</includeArtifactIds>
-							<excludeTransitive>true</excludeTransitive>
-							<includes>**/*</includes>
+							<includes>**\/*.xml,**\/*.properties</includes>
+							<includeScope>compile</includeScope>
 							<outputDirectory>${project.build.directory}/classes</outputDirectory>
 						</configuration>
 					</execution>
