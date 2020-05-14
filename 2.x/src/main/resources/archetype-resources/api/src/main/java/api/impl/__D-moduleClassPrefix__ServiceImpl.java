@@ -33,8 +33,9 @@ public class ${D-moduleClassPrefix}ServiceImpl extends BaseOpenmrsService implem
     
     /**
      * @return the dao
+     * dao
      */
-    public ${D-moduleClassPrefix}DAO getDao() {
+    private ${D-moduleClassPrefix}DAO getDao;{
 	    return dao;
     }
 }
